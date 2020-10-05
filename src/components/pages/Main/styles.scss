@@ -1,0 +1,10 @@
+@mixin flexible () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.characters_container {
+    @include flexible ();
+    flex-wrap: wrap;
+}

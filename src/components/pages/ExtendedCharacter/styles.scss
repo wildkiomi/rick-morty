@@ -1,0 +1,27 @@
+$gray: #e1e1e3;
+$white: #ffffff;
+
+@mixin rounded () {
+    box-shadow:  15px 15px 27px $gray, -15px -15px 27px $white;
+    border-radius: 15px;
+  }
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        @include rounded ();
+        margin: 20px;
+    }
+    .main-container__description {
+        @include rounded ();
+        width: 50%;
+        margin: 70px;
+        padding: 10px;
+        border: 1px solid $gray;
+        strong {
+            background-color: pink;
+        }
+    }
+}

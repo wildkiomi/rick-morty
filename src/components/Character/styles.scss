@@ -1,0 +1,30 @@
+$gray: #e1e1e3;
+$white: #ffffff;
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    width: 300px;
+    min-height: 450px;
+    box-shadow:  15px 15px 27px $gray, -15px -15px 27px $white;
+    border-radius: 15px;
+    .character-container__image img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px 15px 0 0;
+    }
+    .character-container__description {
+        margin: 10px;
+    }
+    .character-container__button button{
+        height: 40px;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        border: none;
+        &:hover {
+            background-color: $gray;
+        }
+    }
+}
